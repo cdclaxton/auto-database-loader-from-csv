@@ -1,0 +1,627 @@
+2018-11-06 09:15:46,335 - loader - INFO - Logging initialised
+2018-11-06 09:15:46,469 - database-loader - INFO - Logging initialised
+2018-11-06 09:15:46,470 - loader - INFO - Logging initialised
+2018-11-06 09:15:46,470 - loader - INFO - Processing files in: ../raw-data/
+2018-11-06 09:15:46,471 - loader - INFO - CSV delimiter: ,
+2018-11-06 09:15:46,471 - loader - INFO - CSV encapsulator: |
+2018-11-06 09:15:46,471 - loader - INFO - CSV encoding: utf-8
+2018-11-06 09:15:46,471 - loader - INFO - Values defined as True: ['True']
+2018-11-06 09:15:46,471 - loader - INFO - Values defined as False: ['False']
+2018-11-06 09:15:46,473 - loader - INFO - Table names: ['m000_card-number', 'm001_card-expiry-date', 'm002_last-name', 'm003_company-name', 'm004_company-purpose', 'm005_card-provider', 'm006_card-country', 'm007_reason', 'm008_dob', 'm009_address', 'm010_company-job-title', 'm011_vrn', 'm012_alive', 'm013_first-name', 'm014_phone-number']
+2018-11-06 09:15:46,480 - database-loader - INFO - Checking database: comet
+2018-11-06 09:15:46,485 - database-loader - INFO - Creating database with: CREATE DATABASE IF NOT EXISTS comet
+2018-11-06 09:15:46,485 - loader - INFO - Processing table m000_card-number ...
+2018-11-06 09:15:46,485 - loader - INFO - Dropping table ...
+2018-11-06 09:15:46,485 - database-loader - INFO - Safe table name for m000_card-number is m000_card_number
+2018-11-06 09:15:46,487 - database-loader - INFO - Table m000_card_number already exists
+2018-11-06 09:15:46,487 - database-loader - INFO - Dropping table with: DROP TABLE m000_card_number
+2018-11-06 09:15:46,502 - loader - INFO - Determining schema ...
+2018-11-06 09:15:46,502 - loader - INFO - Building schema from files: ['../raw-data\\m000_card-number_0.csv', '../raw-data\\m000_card-number_1.csv']
+2018-11-06 09:15:46,502 - loader - INFO - Going to infer schema from file: ../raw-data\m000_card-number_0.csv
+2018-11-06 09:15:46,502 - loader - INFO - Initialising CSV reader to read: ../raw-data\m000_card-number_0.csv
+2018-11-06 09:15:46,502 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,502 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,503 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,503 - loader - INFO - Read 5 lines from ../raw-data\m000_card-number_0.csv
+2018-11-06 09:15:46,503 - loader - INFO - Field names read: dict_keys(['id', 'card-number'])
+2018-11-06 09:15:46,503 - loader - INFO - Going to infer schema from file: ../raw-data\m000_card-number_1.csv
+2018-11-06 09:15:46,503 - loader - INFO - Initialising CSV reader to read: ../raw-data\m000_card-number_1.csv
+2018-11-06 09:15:46,503 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,504 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,504 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,504 - loader - INFO - Read 5 lines from ../raw-data\m000_card-number_1.csv
+2018-11-06 09:15:46,504 - loader - INFO - Field names read: dict_keys(['id', 'card-number'])
+2018-11-06 09:15:46,504 - loader - INFO - Processed 2 files
+2018-11-06 09:15:46,504 - loader - INFO - Creating table ...
+2018-11-06 09:15:46,505 - database-loader - INFO - Creating table with: CREATE TABLE m000_card_number (m000_card_number____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, card_number BIGINT, PRIMARY KEY (m000_card_number____ID));
+2018-11-06 09:15:46,545 - loader - INFO - Inserting data ...
+2018-11-06 09:15:46,545 - loader - INFO - Inserting data from file: ../raw-data\m000_card-number_0.csv
+2018-11-06 09:15:46,545 - loader - INFO - Initialising CSV reader to read: ../raw-data\m000_card-number_0.csv
+2018-11-06 09:15:46,545 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,545 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,545 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,587 - loader - INFO - Inserting data from file: ../raw-data\m000_card-number_1.csv
+2018-11-06 09:15:46,587 - loader - INFO - Initialising CSV reader to read: ../raw-data\m000_card-number_1.csv
+2018-11-06 09:15:46,587 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,588 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,588 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,628 - loader - INFO - Processing table m001_card-expiry-date ...
+2018-11-06 09:15:46,628 - loader - INFO - Dropping table ...
+2018-11-06 09:15:46,628 - database-loader - INFO - Safe table name for m001_card-expiry-date is m001_card_expiry_date
+2018-11-06 09:15:46,632 - database-loader - INFO - Table m001_card_expiry_date already exists
+2018-11-06 09:15:46,632 - database-loader - INFO - Dropping table with: DROP TABLE m001_card_expiry_date
+2018-11-06 09:15:46,647 - loader - INFO - Determining schema ...
+2018-11-06 09:15:46,647 - loader - INFO - Building schema from files: ['../raw-data\\m001_card-expiry-date_0.csv', '../raw-data\\m001_card-expiry-date_1.csv']
+2018-11-06 09:15:46,647 - loader - INFO - Going to infer schema from file: ../raw-data\m001_card-expiry-date_0.csv
+2018-11-06 09:15:46,648 - loader - INFO - Initialising CSV reader to read: ../raw-data\m001_card-expiry-date_0.csv
+2018-11-06 09:15:46,648 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,648 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,648 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,648 - loader - INFO - Read 5 lines from ../raw-data\m001_card-expiry-date_0.csv
+2018-11-06 09:15:46,648 - loader - INFO - Field names read: dict_keys(['id', 'card-expiry-date'])
+2018-11-06 09:15:46,649 - loader - INFO - Going to infer schema from file: ../raw-data\m001_card-expiry-date_1.csv
+2018-11-06 09:15:46,649 - loader - INFO - Initialising CSV reader to read: ../raw-data\m001_card-expiry-date_1.csv
+2018-11-06 09:15:46,649 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,649 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,649 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,650 - loader - INFO - Read 5 lines from ../raw-data\m001_card-expiry-date_1.csv
+2018-11-06 09:15:46,650 - loader - INFO - Field names read: dict_keys(['id', 'card-expiry-date'])
+2018-11-06 09:15:46,650 - loader - INFO - Processed 2 files
+2018-11-06 09:15:46,650 - loader - INFO - Creating table ...
+2018-11-06 09:15:46,650 - database-loader - INFO - Creating table with: CREATE TABLE m001_card_expiry_date (m001_card_expiry_date____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, card_expiry_date TEXT, PRIMARY KEY (m001_card_expiry_date____ID));
+2018-11-06 09:15:46,671 - loader - INFO - Inserting data ...
+2018-11-06 09:15:46,671 - loader - INFO - Inserting data from file: ../raw-data\m001_card-expiry-date_0.csv
+2018-11-06 09:15:46,671 - loader - INFO - Initialising CSV reader to read: ../raw-data\m001_card-expiry-date_0.csv
+2018-11-06 09:15:46,671 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,671 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,671 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,709 - loader - INFO - Inserting data from file: ../raw-data\m001_card-expiry-date_1.csv
+2018-11-06 09:15:46,709 - loader - INFO - Initialising CSV reader to read: ../raw-data\m001_card-expiry-date_1.csv
+2018-11-06 09:15:46,709 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,709 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,710 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,737 - loader - INFO - Processing table m002_last-name ...
+2018-11-06 09:15:46,737 - loader - INFO - Dropping table ...
+2018-11-06 09:15:46,737 - database-loader - INFO - Safe table name for m002_last-name is m002_last_name
+2018-11-06 09:15:46,739 - database-loader - INFO - Table m002_last_name already exists
+2018-11-06 09:15:46,739 - database-loader - INFO - Dropping table with: DROP TABLE m002_last_name
+2018-11-06 09:15:46,755 - loader - INFO - Determining schema ...
+2018-11-06 09:15:46,755 - loader - INFO - Building schema from files: ['../raw-data\\m002_last-name_0.csv', '../raw-data\\m002_last-name_1.csv']
+2018-11-06 09:15:46,755 - loader - INFO - Going to infer schema from file: ../raw-data\m002_last-name_0.csv
+2018-11-06 09:15:46,755 - loader - INFO - Initialising CSV reader to read: ../raw-data\m002_last-name_0.csv
+2018-11-06 09:15:46,756 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,756 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,756 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,756 - loader - INFO - Read 5 lines from ../raw-data\m002_last-name_0.csv
+2018-11-06 09:15:46,757 - loader - INFO - Field names read: dict_keys(['id', 'last-name'])
+2018-11-06 09:15:46,757 - loader - INFO - Going to infer schema from file: ../raw-data\m002_last-name_1.csv
+2018-11-06 09:15:46,757 - loader - INFO - Initialising CSV reader to read: ../raw-data\m002_last-name_1.csv
+2018-11-06 09:15:46,757 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,757 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,757 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,757 - loader - INFO - Read 5 lines from ../raw-data\m002_last-name_1.csv
+2018-11-06 09:15:46,757 - loader - INFO - Field names read: dict_keys(['id', 'last-name'])
+2018-11-06 09:15:46,757 - loader - INFO - Processed 2 files
+2018-11-06 09:15:46,757 - loader - INFO - Creating table ...
+2018-11-06 09:15:46,758 - database-loader - INFO - Creating table with: CREATE TABLE m002_last_name (m002_last_name____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, last_name TEXT, PRIMARY KEY (m002_last_name____ID));
+2018-11-06 09:15:46,792 - loader - INFO - Inserting data ...
+2018-11-06 09:15:46,793 - loader - INFO - Inserting data from file: ../raw-data\m002_last-name_0.csv
+2018-11-06 09:15:46,793 - loader - INFO - Initialising CSV reader to read: ../raw-data\m002_last-name_0.csv
+2018-11-06 09:15:46,793 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,793 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,793 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,831 - loader - INFO - Inserting data from file: ../raw-data\m002_last-name_1.csv
+2018-11-06 09:15:46,832 - loader - INFO - Initialising CSV reader to read: ../raw-data\m002_last-name_1.csv
+2018-11-06 09:15:46,832 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,832 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,832 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,872 - loader - INFO - Processing table m003_company-name ...
+2018-11-06 09:15:46,872 - loader - INFO - Dropping table ...
+2018-11-06 09:15:46,872 - database-loader - INFO - Safe table name for m003_company-name is m003_company_name
+2018-11-06 09:15:46,875 - database-loader - INFO - Table m003_company_name already exists
+2018-11-06 09:15:46,875 - database-loader - INFO - Dropping table with: DROP TABLE m003_company_name
+2018-11-06 09:15:46,895 - loader - INFO - Determining schema ...
+2018-11-06 09:15:46,895 - loader - INFO - Building schema from files: ['../raw-data\\m003_company-name_0.csv', '../raw-data\\m003_company-name_1.csv']
+2018-11-06 09:15:46,895 - loader - INFO - Going to infer schema from file: ../raw-data\m003_company-name_0.csv
+2018-11-06 09:15:46,895 - loader - INFO - Initialising CSV reader to read: ../raw-data\m003_company-name_0.csv
+2018-11-06 09:15:46,895 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,895 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,895 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,896 - loader - INFO - Read 5 lines from ../raw-data\m003_company-name_0.csv
+2018-11-06 09:15:46,896 - loader - INFO - Field names read: dict_keys(['id', 'company-name'])
+2018-11-06 09:15:46,896 - loader - INFO - Going to infer schema from file: ../raw-data\m003_company-name_1.csv
+2018-11-06 09:15:46,896 - loader - INFO - Initialising CSV reader to read: ../raw-data\m003_company-name_1.csv
+2018-11-06 09:15:46,896 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,896 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,896 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,897 - loader - INFO - Read 5 lines from ../raw-data\m003_company-name_1.csv
+2018-11-06 09:15:46,897 - loader - INFO - Field names read: dict_keys(['id', 'company-name'])
+2018-11-06 09:15:46,897 - loader - INFO - Processed 2 files
+2018-11-06 09:15:46,897 - loader - INFO - Creating table ...
+2018-11-06 09:15:46,897 - database-loader - INFO - Creating table with: CREATE TABLE m003_company_name (m003_company_name____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, company_name TEXT, PRIMARY KEY (m003_company_name____ID));
+2018-11-06 09:15:46,916 - loader - INFO - Inserting data ...
+2018-11-06 09:15:46,916 - loader - INFO - Inserting data from file: ../raw-data\m003_company-name_0.csv
+2018-11-06 09:15:46,916 - loader - INFO - Initialising CSV reader to read: ../raw-data\m003_company-name_0.csv
+2018-11-06 09:15:46,917 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,917 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,917 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:46,956 - loader - INFO - Inserting data from file: ../raw-data\m003_company-name_1.csv
+2018-11-06 09:15:46,957 - loader - INFO - Initialising CSV reader to read: ../raw-data\m003_company-name_1.csv
+2018-11-06 09:15:46,957 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:46,958 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:46,958 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,089 - loader - INFO - Processing table m004_company-purpose ...
+2018-11-06 09:15:47,090 - loader - INFO - Dropping table ...
+2018-11-06 09:15:47,090 - database-loader - INFO - Safe table name for m004_company-purpose is m004_company_purpose
+2018-11-06 09:15:47,096 - database-loader - INFO - Table m004_company_purpose already exists
+2018-11-06 09:15:47,096 - database-loader - INFO - Dropping table with: DROP TABLE m004_company_purpose
+2018-11-06 09:15:47,124 - loader - INFO - Determining schema ...
+2018-11-06 09:15:47,124 - loader - INFO - Building schema from files: ['../raw-data\\m004_company-purpose_0.csv', '../raw-data\\m004_company-purpose_1.csv']
+2018-11-06 09:15:47,124 - loader - INFO - Going to infer schema from file: ../raw-data\m004_company-purpose_0.csv
+2018-11-06 09:15:47,124 - loader - INFO - Initialising CSV reader to read: ../raw-data\m004_company-purpose_0.csv
+2018-11-06 09:15:47,124 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,124 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,124 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,125 - loader - INFO - Read 5 lines from ../raw-data\m004_company-purpose_0.csv
+2018-11-06 09:15:47,125 - loader - INFO - Field names read: dict_keys(['id', 'company-purpose'])
+2018-11-06 09:15:47,125 - loader - INFO - Going to infer schema from file: ../raw-data\m004_company-purpose_1.csv
+2018-11-06 09:15:47,125 - loader - INFO - Initialising CSV reader to read: ../raw-data\m004_company-purpose_1.csv
+2018-11-06 09:15:47,125 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,125 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,125 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,125 - loader - INFO - Read 5 lines from ../raw-data\m004_company-purpose_1.csv
+2018-11-06 09:15:47,126 - loader - INFO - Field names read: dict_keys(['id', 'company-purpose'])
+2018-11-06 09:15:47,126 - loader - INFO - Processed 2 files
+2018-11-06 09:15:47,126 - loader - INFO - Creating table ...
+2018-11-06 09:15:47,126 - database-loader - INFO - Creating table with: CREATE TABLE m004_company_purpose (m004_company_purpose____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, company_purpose TEXT, PRIMARY KEY (m004_company_purpose____ID));
+2018-11-06 09:15:47,157 - loader - INFO - Inserting data ...
+2018-11-06 09:15:47,157 - loader - INFO - Inserting data from file: ../raw-data\m004_company-purpose_0.csv
+2018-11-06 09:15:47,158 - loader - INFO - Initialising CSV reader to read: ../raw-data\m004_company-purpose_0.csv
+2018-11-06 09:15:47,158 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,158 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,158 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,199 - loader - INFO - Inserting data from file: ../raw-data\m004_company-purpose_1.csv
+2018-11-06 09:15:47,199 - loader - INFO - Initialising CSV reader to read: ../raw-data\m004_company-purpose_1.csv
+2018-11-06 09:15:47,199 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,199 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,199 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,240 - loader - INFO - Processing table m005_card-provider ...
+2018-11-06 09:15:47,240 - loader - INFO - Dropping table ...
+2018-11-06 09:15:47,241 - database-loader - INFO - Safe table name for m005_card-provider is m005_card_provider
+2018-11-06 09:15:47,248 - database-loader - INFO - Table m005_card_provider already exists
+2018-11-06 09:15:47,248 - database-loader - INFO - Dropping table with: DROP TABLE m005_card_provider
+2018-11-06 09:15:47,269 - loader - INFO - Determining schema ...
+2018-11-06 09:15:47,269 - loader - INFO - Building schema from files: ['../raw-data\\m005_card-provider_0.csv', '../raw-data\\m005_card-provider_1.csv']
+2018-11-06 09:15:47,269 - loader - INFO - Going to infer schema from file: ../raw-data\m005_card-provider_0.csv
+2018-11-06 09:15:47,269 - loader - INFO - Initialising CSV reader to read: ../raw-data\m005_card-provider_0.csv
+2018-11-06 09:15:47,269 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,269 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,269 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,270 - loader - INFO - Read 5 lines from ../raw-data\m005_card-provider_0.csv
+2018-11-06 09:15:47,270 - loader - INFO - Field names read: dict_keys(['id', 'card-provider'])
+2018-11-06 09:15:47,270 - loader - INFO - Going to infer schema from file: ../raw-data\m005_card-provider_1.csv
+2018-11-06 09:15:47,270 - loader - INFO - Initialising CSV reader to read: ../raw-data\m005_card-provider_1.csv
+2018-11-06 09:15:47,270 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,270 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,271 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,271 - loader - INFO - Read 5 lines from ../raw-data\m005_card-provider_1.csv
+2018-11-06 09:15:47,271 - loader - INFO - Field names read: dict_keys(['id', 'card-provider'])
+2018-11-06 09:15:47,271 - loader - INFO - Processed 2 files
+2018-11-06 09:15:47,271 - loader - INFO - Creating table ...
+2018-11-06 09:15:47,271 - database-loader - INFO - Creating table with: CREATE TABLE m005_card_provider (m005_card_provider____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, card_provider TEXT, PRIMARY KEY (m005_card_provider____ID));
+2018-11-06 09:15:47,296 - loader - INFO - Inserting data ...
+2018-11-06 09:15:47,296 - loader - INFO - Inserting data from file: ../raw-data\m005_card-provider_0.csv
+2018-11-06 09:15:47,296 - loader - INFO - Initialising CSV reader to read: ../raw-data\m005_card-provider_0.csv
+2018-11-06 09:15:47,296 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,296 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,296 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,349 - loader - INFO - Inserting data from file: ../raw-data\m005_card-provider_1.csv
+2018-11-06 09:15:47,349 - loader - INFO - Initialising CSV reader to read: ../raw-data\m005_card-provider_1.csv
+2018-11-06 09:15:47,349 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,349 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,349 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,388 - loader - INFO - Processing table m006_card-country ...
+2018-11-06 09:15:47,388 - loader - INFO - Dropping table ...
+2018-11-06 09:15:47,388 - database-loader - INFO - Safe table name for m006_card-country is m006_card_country
+2018-11-06 09:15:47,391 - database-loader - INFO - Table m006_card_country already exists
+2018-11-06 09:15:47,391 - database-loader - INFO - Dropping table with: DROP TABLE m006_card_country
+2018-11-06 09:15:47,406 - loader - INFO - Determining schema ...
+2018-11-06 09:15:47,406 - loader - INFO - Building schema from files: ['../raw-data\\m006_card-country_0.csv', '../raw-data\\m006_card-country_1.csv']
+2018-11-06 09:15:47,406 - loader - INFO - Going to infer schema from file: ../raw-data\m006_card-country_0.csv
+2018-11-06 09:15:47,406 - loader - INFO - Initialising CSV reader to read: ../raw-data\m006_card-country_0.csv
+2018-11-06 09:15:47,407 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,407 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,407 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,407 - loader - INFO - Read 5 lines from ../raw-data\m006_card-country_0.csv
+2018-11-06 09:15:47,407 - loader - INFO - Field names read: dict_keys(['id', 'card-country'])
+2018-11-06 09:15:47,407 - loader - INFO - Going to infer schema from file: ../raw-data\m006_card-country_1.csv
+2018-11-06 09:15:47,407 - loader - INFO - Initialising CSV reader to read: ../raw-data\m006_card-country_1.csv
+2018-11-06 09:15:47,407 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,407 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,407 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,408 - loader - INFO - Read 5 lines from ../raw-data\m006_card-country_1.csv
+2018-11-06 09:15:47,408 - loader - INFO - Field names read: dict_keys(['id', 'card-country'])
+2018-11-06 09:15:47,408 - loader - INFO - Processed 2 files
+2018-11-06 09:15:47,408 - loader - INFO - Creating table ...
+2018-11-06 09:15:47,408 - database-loader - INFO - Creating table with: CREATE TABLE m006_card_country (m006_card_country____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, card_country TEXT, PRIMARY KEY (m006_card_country____ID));
+2018-11-06 09:15:47,440 - loader - INFO - Inserting data ...
+2018-11-06 09:15:47,440 - loader - INFO - Inserting data from file: ../raw-data\m006_card-country_0.csv
+2018-11-06 09:15:47,440 - loader - INFO - Initialising CSV reader to read: ../raw-data\m006_card-country_0.csv
+2018-11-06 09:15:47,440 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,441 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,441 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,479 - loader - INFO - Inserting data from file: ../raw-data\m006_card-country_1.csv
+2018-11-06 09:15:47,479 - loader - INFO - Initialising CSV reader to read: ../raw-data\m006_card-country_1.csv
+2018-11-06 09:15:47,480 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,480 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,480 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,520 - loader - INFO - Processing table m007_reason ...
+2018-11-06 09:15:47,520 - loader - INFO - Dropping table ...
+2018-11-06 09:15:47,520 - database-loader - INFO - Safe table name for m007_reason is m007_reason
+2018-11-06 09:15:47,523 - database-loader - INFO - Table m007_reason already exists
+2018-11-06 09:15:47,523 - database-loader - INFO - Dropping table with: DROP TABLE m007_reason
+2018-11-06 09:15:47,543 - loader - INFO - Determining schema ...
+2018-11-06 09:15:47,543 - loader - INFO - Building schema from files: ['../raw-data\\m007_reason_0.csv', '../raw-data\\m007_reason_1.csv']
+2018-11-06 09:15:47,543 - loader - INFO - Going to infer schema from file: ../raw-data\m007_reason_0.csv
+2018-11-06 09:15:47,543 - loader - INFO - Initialising CSV reader to read: ../raw-data\m007_reason_0.csv
+2018-11-06 09:15:47,543 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,543 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,544 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,544 - loader - INFO - Read 5 lines from ../raw-data\m007_reason_0.csv
+2018-11-06 09:15:47,544 - loader - INFO - Field names read: dict_keys(['id', 'reason'])
+2018-11-06 09:15:47,544 - loader - INFO - Going to infer schema from file: ../raw-data\m007_reason_1.csv
+2018-11-06 09:15:47,544 - loader - INFO - Initialising CSV reader to read: ../raw-data\m007_reason_1.csv
+2018-11-06 09:15:47,544 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,544 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,545 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,545 - loader - INFO - Read 5 lines from ../raw-data\m007_reason_1.csv
+2018-11-06 09:15:47,545 - loader - INFO - Field names read: dict_keys(['id', 'reason'])
+2018-11-06 09:15:47,545 - loader - INFO - Processed 2 files
+2018-11-06 09:15:47,545 - loader - INFO - Creating table ...
+2018-11-06 09:15:47,545 - database-loader - INFO - Creating table with: CREATE TABLE m007_reason (m007_reason____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, reason TEXT, PRIMARY KEY (m007_reason____ID));
+2018-11-06 09:15:47,570 - loader - INFO - Inserting data ...
+2018-11-06 09:15:47,570 - loader - INFO - Inserting data from file: ../raw-data\m007_reason_0.csv
+2018-11-06 09:15:47,570 - loader - INFO - Initialising CSV reader to read: ../raw-data\m007_reason_0.csv
+2018-11-06 09:15:47,570 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,570 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,570 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,625 - loader - INFO - Inserting data from file: ../raw-data\m007_reason_1.csv
+2018-11-06 09:15:47,625 - loader - INFO - Initialising CSV reader to read: ../raw-data\m007_reason_1.csv
+2018-11-06 09:15:47,625 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,625 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,626 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,663 - loader - INFO - Processing table m008_dob ...
+2018-11-06 09:15:47,663 - loader - INFO - Dropping table ...
+2018-11-06 09:15:47,663 - database-loader - INFO - Safe table name for m008_dob is m008_dob
+2018-11-06 09:15:47,666 - database-loader - INFO - Table m008_dob already exists
+2018-11-06 09:15:47,666 - database-loader - INFO - Dropping table with: DROP TABLE m008_dob
+2018-11-06 09:15:47,683 - loader - INFO - Determining schema ...
+2018-11-06 09:15:47,683 - loader - INFO - Building schema from files: ['../raw-data\\m008_dob_0.csv', '../raw-data\\m008_dob_1.csv']
+2018-11-06 09:15:47,683 - loader - INFO - Going to infer schema from file: ../raw-data\m008_dob_0.csv
+2018-11-06 09:15:47,683 - loader - INFO - Initialising CSV reader to read: ../raw-data\m008_dob_0.csv
+2018-11-06 09:15:47,683 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,684 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,684 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,684 - loader - INFO - Read 5 lines from ../raw-data\m008_dob_0.csv
+2018-11-06 09:15:47,684 - loader - INFO - Field names read: dict_keys(['id', 'dob'])
+2018-11-06 09:15:47,684 - loader - INFO - Going to infer schema from file: ../raw-data\m008_dob_1.csv
+2018-11-06 09:15:47,684 - loader - INFO - Initialising CSV reader to read: ../raw-data\m008_dob_1.csv
+2018-11-06 09:15:47,684 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,685 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,685 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,685 - loader - INFO - Read 5 lines from ../raw-data\m008_dob_1.csv
+2018-11-06 09:15:47,685 - loader - INFO - Field names read: dict_keys(['id', 'dob'])
+2018-11-06 09:15:47,685 - loader - INFO - Processed 2 files
+2018-11-06 09:15:47,685 - loader - INFO - Creating table ...
+2018-11-06 09:15:47,685 - database-loader - INFO - Creating table with: CREATE TABLE m008_dob (m008_dob____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, dob TEXT, PRIMARY KEY (m008_dob____ID));
+2018-11-06 09:15:47,717 - loader - INFO - Inserting data ...
+2018-11-06 09:15:47,717 - loader - INFO - Inserting data from file: ../raw-data\m008_dob_0.csv
+2018-11-06 09:15:47,717 - loader - INFO - Initialising CSV reader to read: ../raw-data\m008_dob_0.csv
+2018-11-06 09:15:47,717 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,717 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,717 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,755 - loader - INFO - Inserting data from file: ../raw-data\m008_dob_1.csv
+2018-11-06 09:15:47,755 - loader - INFO - Initialising CSV reader to read: ../raw-data\m008_dob_1.csv
+2018-11-06 09:15:47,755 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,755 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,755 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,801 - loader - INFO - Processing table m009_address ...
+2018-11-06 09:15:47,801 - loader - INFO - Dropping table ...
+2018-11-06 09:15:47,801 - database-loader - INFO - Safe table name for m009_address is m009_address
+2018-11-06 09:15:47,804 - database-loader - INFO - Table m009_address already exists
+2018-11-06 09:15:47,804 - database-loader - INFO - Dropping table with: DROP TABLE m009_address
+2018-11-06 09:15:47,827 - loader - INFO - Determining schema ...
+2018-11-06 09:15:47,828 - loader - INFO - Building schema from files: ['../raw-data\\m009_address_0.csv', '../raw-data\\m009_address_1.csv']
+2018-11-06 09:15:47,828 - loader - INFO - Going to infer schema from file: ../raw-data\m009_address_0.csv
+2018-11-06 09:15:47,828 - loader - INFO - Initialising CSV reader to read: ../raw-data\m009_address_0.csv
+2018-11-06 09:15:47,828 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,828 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,828 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,828 - loader - INFO - Read 5 lines from ../raw-data\m009_address_0.csv
+2018-11-06 09:15:47,828 - loader - INFO - Field names read: dict_keys(['id', 'address'])
+2018-11-06 09:15:47,829 - loader - INFO - Going to infer schema from file: ../raw-data\m009_address_1.csv
+2018-11-06 09:15:47,829 - loader - INFO - Initialising CSV reader to read: ../raw-data\m009_address_1.csv
+2018-11-06 09:15:47,829 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,829 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,829 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,829 - loader - INFO - Read 5 lines from ../raw-data\m009_address_1.csv
+2018-11-06 09:15:47,829 - loader - INFO - Field names read: dict_keys(['id', 'address'])
+2018-11-06 09:15:47,829 - loader - INFO - Processed 2 files
+2018-11-06 09:15:47,829 - loader - INFO - Creating table ...
+2018-11-06 09:15:47,829 - database-loader - INFO - Creating table with: CREATE TABLE m009_address (m009_address____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, address TEXT, PRIMARY KEY (m009_address____ID));
+2018-11-06 09:15:47,853 - loader - INFO - Inserting data ...
+2018-11-06 09:15:47,853 - loader - INFO - Inserting data from file: ../raw-data\m009_address_0.csv
+2018-11-06 09:15:47,853 - loader - INFO - Initialising CSV reader to read: ../raw-data\m009_address_0.csv
+2018-11-06 09:15:47,853 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,853 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,853 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,897 - loader - INFO - Inserting data from file: ../raw-data\m009_address_1.csv
+2018-11-06 09:15:47,897 - loader - INFO - Initialising CSV reader to read: ../raw-data\m009_address_1.csv
+2018-11-06 09:15:47,897 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,897 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,897 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,932 - loader - INFO - Processing table m010_company-job-title ...
+2018-11-06 09:15:47,932 - loader - INFO - Dropping table ...
+2018-11-06 09:15:47,932 - database-loader - INFO - Safe table name for m010_company-job-title is m010_company_job_title
+2018-11-06 09:15:47,935 - database-loader - INFO - Table m010_company_job_title already exists
+2018-11-06 09:15:47,935 - database-loader - INFO - Dropping table with: DROP TABLE m010_company_job_title
+2018-11-06 09:15:47,946 - loader - INFO - Determining schema ...
+2018-11-06 09:15:47,946 - loader - INFO - Building schema from files: ['../raw-data\\m010_company-job-title_0.csv', '../raw-data\\m010_company-job-title_1.csv']
+2018-11-06 09:15:47,946 - loader - INFO - Going to infer schema from file: ../raw-data\m010_company-job-title_0.csv
+2018-11-06 09:15:47,946 - loader - INFO - Initialising CSV reader to read: ../raw-data\m010_company-job-title_0.csv
+2018-11-06 09:15:47,946 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,946 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,946 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,947 - loader - INFO - Read 5 lines from ../raw-data\m010_company-job-title_0.csv
+2018-11-06 09:15:47,947 - loader - INFO - Field names read: dict_keys(['id', 'company-job-title'])
+2018-11-06 09:15:47,947 - loader - INFO - Going to infer schema from file: ../raw-data\m010_company-job-title_1.csv
+2018-11-06 09:15:47,947 - loader - INFO - Initialising CSV reader to read: ../raw-data\m010_company-job-title_1.csv
+2018-11-06 09:15:47,947 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,947 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,947 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:47,948 - loader - INFO - Read 5 lines from ../raw-data\m010_company-job-title_1.csv
+2018-11-06 09:15:47,948 - loader - INFO - Field names read: dict_keys(['id', 'company-job-title'])
+2018-11-06 09:15:47,948 - loader - INFO - Processed 2 files
+2018-11-06 09:15:47,948 - loader - INFO - Creating table ...
+2018-11-06 09:15:47,948 - database-loader - INFO - Creating table with: CREATE TABLE m010_company_job_title (m010_company_job_title____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, company_job_title TEXT, PRIMARY KEY (m010_company_job_title____ID));
+2018-11-06 09:15:47,990 - loader - INFO - Inserting data ...
+2018-11-06 09:15:47,990 - loader - INFO - Inserting data from file: ../raw-data\m010_company-job-title_0.csv
+2018-11-06 09:15:47,990 - loader - INFO - Initialising CSV reader to read: ../raw-data\m010_company-job-title_0.csv
+2018-11-06 09:15:47,990 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:47,990 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:47,990 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,030 - loader - INFO - Inserting data from file: ../raw-data\m010_company-job-title_1.csv
+2018-11-06 09:15:48,030 - loader - INFO - Initialising CSV reader to read: ../raw-data\m010_company-job-title_1.csv
+2018-11-06 09:15:48,030 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,030 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,030 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,069 - loader - INFO - Processing table m011_vrn ...
+2018-11-06 09:15:48,069 - loader - INFO - Dropping table ...
+2018-11-06 09:15:48,069 - database-loader - INFO - Safe table name for m011_vrn is m011_vrn
+2018-11-06 09:15:48,072 - database-loader - INFO - Table m011_vrn already exists
+2018-11-06 09:15:48,072 - database-loader - INFO - Dropping table with: DROP TABLE m011_vrn
+2018-11-06 09:15:48,087 - loader - INFO - Determining schema ...
+2018-11-06 09:15:48,087 - loader - INFO - Building schema from files: ['../raw-data\\m011_vrn_0.csv', '../raw-data\\m011_vrn_1.csv']
+2018-11-06 09:15:48,088 - loader - INFO - Going to infer schema from file: ../raw-data\m011_vrn_0.csv
+2018-11-06 09:15:48,088 - loader - INFO - Initialising CSV reader to read: ../raw-data\m011_vrn_0.csv
+2018-11-06 09:15:48,088 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,088 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,088 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,088 - loader - INFO - Read 5 lines from ../raw-data\m011_vrn_0.csv
+2018-11-06 09:15:48,089 - loader - INFO - Field names read: dict_keys(['id', 'vrn'])
+2018-11-06 09:15:48,089 - loader - INFO - Going to infer schema from file: ../raw-data\m011_vrn_1.csv
+2018-11-06 09:15:48,089 - loader - INFO - Initialising CSV reader to read: ../raw-data\m011_vrn_1.csv
+2018-11-06 09:15:48,089 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,089 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,089 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,089 - loader - INFO - Read 5 lines from ../raw-data\m011_vrn_1.csv
+2018-11-06 09:15:48,089 - loader - INFO - Field names read: dict_keys(['id', 'vrn'])
+2018-11-06 09:15:48,090 - loader - INFO - Processed 2 files
+2018-11-06 09:15:48,090 - loader - INFO - Creating table ...
+2018-11-06 09:15:48,090 - database-loader - INFO - Creating table with: CREATE TABLE m011_vrn (m011_vrn____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, vrn TEXT, PRIMARY KEY (m011_vrn____ID));
+2018-11-06 09:15:48,114 - loader - INFO - Inserting data ...
+2018-11-06 09:15:48,114 - loader - INFO - Inserting data from file: ../raw-data\m011_vrn_0.csv
+2018-11-06 09:15:48,114 - loader - INFO - Initialising CSV reader to read: ../raw-data\m011_vrn_0.csv
+2018-11-06 09:15:48,114 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,115 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,115 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,156 - loader - INFO - Inserting data from file: ../raw-data\m011_vrn_1.csv
+2018-11-06 09:15:48,156 - loader - INFO - Initialising CSV reader to read: ../raw-data\m011_vrn_1.csv
+2018-11-06 09:15:48,156 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,156 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,156 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,186 - loader - INFO - Processing table m012_alive ...
+2018-11-06 09:15:48,187 - loader - INFO - Dropping table ...
+2018-11-06 09:15:48,187 - database-loader - INFO - Safe table name for m012_alive is m012_alive
+2018-11-06 09:15:48,188 - database-loader - INFO - Table m012_alive already exists
+2018-11-06 09:15:48,188 - database-loader - INFO - Dropping table with: DROP TABLE m012_alive
+2018-11-06 09:15:48,203 - loader - INFO - Determining schema ...
+2018-11-06 09:15:48,203 - loader - INFO - Building schema from files: ['../raw-data\\m012_alive_0.csv', '../raw-data\\m012_alive_1.csv']
+2018-11-06 09:15:48,203 - loader - INFO - Going to infer schema from file: ../raw-data\m012_alive_0.csv
+2018-11-06 09:15:48,203 - loader - INFO - Initialising CSV reader to read: ../raw-data\m012_alive_0.csv
+2018-11-06 09:15:48,204 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,204 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,204 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,204 - loader - INFO - Read 5 lines from ../raw-data\m012_alive_0.csv
+2018-11-06 09:15:48,204 - loader - INFO - Field names read: dict_keys(['id', 'alive'])
+2018-11-06 09:15:48,204 - loader - INFO - Going to infer schema from file: ../raw-data\m012_alive_1.csv
+2018-11-06 09:15:48,205 - loader - INFO - Initialising CSV reader to read: ../raw-data\m012_alive_1.csv
+2018-11-06 09:15:48,205 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,205 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,205 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,205 - loader - INFO - Read 5 lines from ../raw-data\m012_alive_1.csv
+2018-11-06 09:15:48,206 - loader - INFO - Field names read: dict_keys(['id', 'alive'])
+2018-11-06 09:15:48,206 - loader - INFO - Processed 2 files
+2018-11-06 09:15:48,206 - loader - INFO - Creating table ...
+2018-11-06 09:15:48,206 - database-loader - INFO - Creating table with: CREATE TABLE m012_alive (m012_alive____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, alive BOOLEAN, PRIMARY KEY (m012_alive____ID));
+2018-11-06 09:15:48,233 - loader - INFO - Inserting data ...
+2018-11-06 09:15:48,234 - loader - INFO - Inserting data from file: ../raw-data\m012_alive_0.csv
+2018-11-06 09:15:48,234 - loader - INFO - Initialising CSV reader to read: ../raw-data\m012_alive_0.csv
+2018-11-06 09:15:48,234 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,234 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,234 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,273 - loader - INFO - Inserting data from file: ../raw-data\m012_alive_1.csv
+2018-11-06 09:15:48,273 - loader - INFO - Initialising CSV reader to read: ../raw-data\m012_alive_1.csv
+2018-11-06 09:15:48,273 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,273 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,273 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,307 - loader - INFO - Processing table m013_first-name ...
+2018-11-06 09:15:48,307 - loader - INFO - Dropping table ...
+2018-11-06 09:15:48,307 - database-loader - INFO - Safe table name for m013_first-name is m013_first_name
+2018-11-06 09:15:48,309 - database-loader - INFO - Table m013_first_name already exists
+2018-11-06 09:15:48,309 - database-loader - INFO - Dropping table with: DROP TABLE m013_first_name
+2018-11-06 09:15:48,327 - loader - INFO - Determining schema ...
+2018-11-06 09:15:48,327 - loader - INFO - Building schema from files: ['../raw-data\\m013_first-name_0.csv', '../raw-data\\m013_first-name_1.csv']
+2018-11-06 09:15:48,327 - loader - INFO - Going to infer schema from file: ../raw-data\m013_first-name_0.csv
+2018-11-06 09:15:48,327 - loader - INFO - Initialising CSV reader to read: ../raw-data\m013_first-name_0.csv
+2018-11-06 09:15:48,328 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,328 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,328 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,328 - loader - INFO - Read 5 lines from ../raw-data\m013_first-name_0.csv
+2018-11-06 09:15:48,328 - loader - INFO - Field names read: dict_keys(['id', 'first-name'])
+2018-11-06 09:15:48,328 - loader - INFO - Going to infer schema from file: ../raw-data\m013_first-name_1.csv
+2018-11-06 09:15:48,329 - loader - INFO - Initialising CSV reader to read: ../raw-data\m013_first-name_1.csv
+2018-11-06 09:15:48,329 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,329 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,329 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,329 - loader - INFO - Read 5 lines from ../raw-data\m013_first-name_1.csv
+2018-11-06 09:15:48,329 - loader - INFO - Field names read: dict_keys(['id', 'first-name'])
+2018-11-06 09:15:48,329 - loader - INFO - Processed 2 files
+2018-11-06 09:15:48,329 - loader - INFO - Creating table ...
+2018-11-06 09:15:48,330 - database-loader - INFO - Creating table with: CREATE TABLE m013_first_name (m013_first_name____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, first_name TEXT, PRIMARY KEY (m013_first_name____ID));
+2018-11-06 09:15:48,355 - loader - INFO - Inserting data ...
+2018-11-06 09:15:48,355 - loader - INFO - Inserting data from file: ../raw-data\m013_first-name_0.csv
+2018-11-06 09:15:48,355 - loader - INFO - Initialising CSV reader to read: ../raw-data\m013_first-name_0.csv
+2018-11-06 09:15:48,356 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,356 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,356 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,398 - loader - INFO - Inserting data from file: ../raw-data\m013_first-name_1.csv
+2018-11-06 09:15:48,399 - loader - INFO - Initialising CSV reader to read: ../raw-data\m013_first-name_1.csv
+2018-11-06 09:15:48,399 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,399 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,399 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,451 - loader - INFO - Processing table m014_phone-number ...
+2018-11-06 09:15:48,451 - loader - INFO - Dropping table ...
+2018-11-06 09:15:48,452 - database-loader - INFO - Safe table name for m014_phone-number is m014_phone_number
+2018-11-06 09:15:48,454 - database-loader - INFO - Table m014_phone_number already exists
+2018-11-06 09:15:48,454 - database-loader - INFO - Dropping table with: DROP TABLE m014_phone_number
+2018-11-06 09:15:48,466 - loader - INFO - Determining schema ...
+2018-11-06 09:15:48,466 - loader - INFO - Building schema from files: ['../raw-data\\m014_phone-number_0.csv', '../raw-data\\m014_phone-number_1.csv']
+2018-11-06 09:15:48,466 - loader - INFO - Going to infer schema from file: ../raw-data\m014_phone-number_0.csv
+2018-11-06 09:15:48,466 - loader - INFO - Initialising CSV reader to read: ../raw-data\m014_phone-number_0.csv
+2018-11-06 09:15:48,466 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,466 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,467 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,467 - loader - INFO - Read 5 lines from ../raw-data\m014_phone-number_0.csv
+2018-11-06 09:15:48,467 - loader - INFO - Field names read: dict_keys(['id', 'phone-number'])
+2018-11-06 09:15:48,467 - loader - INFO - Going to infer schema from file: ../raw-data\m014_phone-number_1.csv
+2018-11-06 09:15:48,467 - loader - INFO - Initialising CSV reader to read: ../raw-data\m014_phone-number_1.csv
+2018-11-06 09:15:48,467 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,468 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,468 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,468 - loader - INFO - Read 5 lines from ../raw-data\m014_phone-number_1.csv
+2018-11-06 09:15:48,468 - loader - INFO - Field names read: dict_keys(['id', 'phone-number'])
+2018-11-06 09:15:48,468 - loader - INFO - Processed 2 files
+2018-11-06 09:15:48,469 - loader - INFO - Creating table ...
+2018-11-06 09:15:48,469 - database-loader - INFO - Creating table with: CREATE TABLE m014_phone_number (m014_phone_number____ID INT NOT NULL AUTO_INCREMENT, id BIGINT, phone_number TEXT, PRIMARY KEY (m014_phone_number____ID));
+2018-11-06 09:15:48,488 - loader - INFO - Inserting data ...
+2018-11-06 09:15:48,489 - loader - INFO - Inserting data from file: ../raw-data\m014_phone-number_0.csv
+2018-11-06 09:15:48,489 - loader - INFO - Initialising CSV reader to read: ../raw-data\m014_phone-number_0.csv
+2018-11-06 09:15:48,489 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,489 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,489 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:15:48,530 - loader - INFO - Inserting data from file: ../raw-data\m014_phone-number_1.csv
+2018-11-06 09:15:48,530 - loader - INFO - Initialising CSV reader to read: ../raw-data\m014_phone-number_1.csv
+2018-11-06 09:15:48,531 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:15:48,531 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:15:48,531 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:18:22,471 - data-generator - INFO - Logging initialised
+2018-11-06 09:18:22,527 - loader - INFO - Logging initialised
+2018-11-06 09:18:22,528 - loader - INFO - Initialising CSV reader to read: ./data_reader/test_data/test_data1.csv
+2018-11-06 09:18:22,528 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:18:22,529 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:18:22,529 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:18:22,556 - database-loader - INFO - Logging initialised
+2018-11-06 09:18:22,564 - loader - INFO - Logging initialised
+2018-11-06 09:18:22,572 - loader - INFO - Initialising CSV reader to read: ./database_loader/test_data/test_data_1.csv
+2018-11-06 09:18:22,572 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:18:22,572 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:18:22,572 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:18:22,572 - loader - INFO - Read 3 lines from ./database_loader/test_data/test_data_1.csv
+2018-11-06 09:18:22,572 - loader - INFO - Field names read: dict_keys(['ID', 'Pedal name', 'Manufacturer', 'Type of effect', 'Own'])
+2018-11-06 09:18:22,572 - loader - INFO - Building schema from files: ['./database_loader/test_data/test_data_1.csv', './database_loader/test_data/test_data_2.csv']
+2018-11-06 09:18:22,572 - loader - INFO - Going to infer schema from file: ./database_loader/test_data/test_data_1.csv
+2018-11-06 09:18:22,573 - loader - INFO - Initialising CSV reader to read: ./database_loader/test_data/test_data_1.csv
+2018-11-06 09:18:22,573 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:18:22,573 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:18:22,573 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:18:22,573 - loader - INFO - Read 3 lines from ./database_loader/test_data/test_data_1.csv
+2018-11-06 09:18:22,573 - loader - INFO - Field names read: dict_keys(['ID', 'Pedal name', 'Manufacturer', 'Type of effect', 'Own'])
+2018-11-06 09:18:22,573 - loader - INFO - Going to infer schema from file: ./database_loader/test_data/test_data_2.csv
+2018-11-06 09:18:22,574 - loader - INFO - Initialising CSV reader to read: ./database_loader/test_data/test_data_2.csv
+2018-11-06 09:18:22,574 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:18:22,574 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:18:22,574 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:18:22,574 - loader - INFO - Read 3 lines from ./database_loader/test_data/test_data_2.csv
+2018-11-06 09:18:22,574 - loader - INFO - Field names read: dict_keys(['ID', 'Pedal name', 'Manufacturer', 'Type of effect', 'Own'])
+2018-11-06 09:18:22,574 - loader - INFO - Processed 2 files
+2018-11-06 09:33:45,220 - data-generator - INFO - Logging initialised
+2018-11-06 09:33:45,282 - loader - INFO - Logging initialised
+2018-11-06 09:33:45,298 - loader - INFO - Initialising CSV reader to read: ./data_reader/test_data/test_data1.csv
+2018-11-06 09:33:45,298 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:33:45,298 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:33:45,298 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:33:45,314 - database-loader - INFO - Logging initialised
+2018-11-06 09:33:45,329 - loader - INFO - Logging initialised
+2018-11-06 09:33:45,329 - loader - INFO - Initialising CSV reader to read: ./database_loader/test_data/test_data_1.csv
+2018-11-06 09:33:45,329 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:33:45,329 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:33:45,329 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:33:45,329 - loader - INFO - Read 3 lines from ./database_loader/test_data/test_data_1.csv
+2018-11-06 09:33:45,329 - loader - INFO - Field names read: dict_keys(['ID', 'Pedal name', 'Manufacturer', 'Type of effect', 'Own'])
+2018-11-06 09:33:45,329 - loader - INFO - Building schema from files: ['./database_loader/test_data/test_data_1.csv', './database_loader/test_data/test_data_2.csv']
+2018-11-06 09:33:45,329 - loader - INFO - Going to infer schema from file: ./database_loader/test_data/test_data_1.csv
+2018-11-06 09:33:45,329 - loader - INFO - Initialising CSV reader to read: ./database_loader/test_data/test_data_1.csv
+2018-11-06 09:33:45,329 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:33:45,329 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:33:45,329 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:33:45,329 - loader - INFO - Read 3 lines from ./database_loader/test_data/test_data_1.csv
+2018-11-06 09:33:45,345 - loader - INFO - Field names read: dict_keys(['ID', 'Pedal name', 'Manufacturer', 'Type of effect', 'Own'])
+2018-11-06 09:33:45,345 - loader - INFO - Going to infer schema from file: ./database_loader/test_data/test_data_2.csv
+2018-11-06 09:33:45,345 - loader - INFO - Initialising CSV reader to read: ./database_loader/test_data/test_data_2.csv
+2018-11-06 09:33:45,345 - loader - INFO - Delimiter set to: ,
+2018-11-06 09:33:45,345 - loader - INFO - Encapsulator set to: |
+2018-11-06 09:33:45,345 - loader - INFO - Encoding set to: utf-8 
+2018-11-06 09:33:45,345 - loader - INFO - Read 3 lines from ./database_loader/test_data/test_data_2.csv
+2018-11-06 09:33:45,345 - loader - INFO - Field names read: dict_keys(['ID', 'Pedal name', 'Manufacturer', 'Type of effect', 'Own'])
+2018-11-06 09:33:45,345 - loader - INFO - Processed 2 files
+2019-01-30 10:22:11,189 - data-generator - INFO - Logging initialised
+2019-01-30 10:22:11,271 - loader - INFO - Logging initialised
+2019-01-30 10:22:11,272 - loader - INFO - Initialising CSV reader to read: ./data_reader/test_data/test_data1.csv
+2019-01-30 10:22:11,272 - loader - INFO - Delimiter set to: ,
+2019-01-30 10:22:11,272 - loader - INFO - Encapsulator set to: |
+2019-01-30 10:22:11,273 - loader - INFO - Encoding set to: utf-8 
+2019-01-30 10:22:11,357 - database-loader - INFO - Logging initialised
+2019-01-30 10:22:11,366 - loader - INFO - Logging initialised
+2019-01-30 10:22:11,377 - loader - INFO - Initialising CSV reader to read: ./database_loader/test_data/test_data_1.csv
+2019-01-30 10:22:11,377 - loader - INFO - Delimiter set to: ,
+2019-01-30 10:22:11,377 - loader - INFO - Encapsulator set to: |
+2019-01-30 10:22:11,377 - loader - INFO - Encoding set to: utf-8 
+2019-01-30 10:22:11,378 - loader - INFO - Read 3 lines from ./database_loader/test_data/test_data_1.csv
+2019-01-30 10:22:11,378 - loader - INFO - Field names read: dict_keys(['ID', 'Pedal name', 'Manufacturer', 'Type of effect', 'Own'])
+2019-01-30 10:22:11,378 - loader - INFO - Building schema from files: ['./database_loader/test_data/test_data_1.csv', './database_loader/test_data/test_data_2.csv']
+2019-01-30 10:22:11,378 - loader - INFO - Going to infer schema from file: ./database_loader/test_data/test_data_1.csv
+2019-01-30 10:22:11,379 - loader - INFO - Initialising CSV reader to read: ./database_loader/test_data/test_data_1.csv
+2019-01-30 10:22:11,379 - loader - INFO - Delimiter set to: ,
+2019-01-30 10:22:11,379 - loader - INFO - Encapsulator set to: |
+2019-01-30 10:22:11,379 - loader - INFO - Encoding set to: utf-8 
+2019-01-30 10:22:11,379 - loader - INFO - Read 3 lines from ./database_loader/test_data/test_data_1.csv
+2019-01-30 10:22:11,379 - loader - INFO - Field names read: dict_keys(['ID', 'Pedal name', 'Manufacturer', 'Type of effect', 'Own'])
+2019-01-30 10:22:11,380 - loader - INFO - Going to infer schema from file: ./database_loader/test_data/test_data_2.csv
+2019-01-30 10:22:11,380 - loader - INFO - Initialising CSV reader to read: ./database_loader/test_data/test_data_2.csv
+2019-01-30 10:22:11,380 - loader - INFO - Delimiter set to: ,
+2019-01-30 10:22:11,380 - loader - INFO - Encapsulator set to: |
+2019-01-30 10:22:11,380 - loader - INFO - Encoding set to: utf-8 
+2019-01-30 10:22:11,380 - loader - INFO - Read 3 lines from ./database_loader/test_data/test_data_2.csv
+2019-01-30 10:22:11,381 - loader - INFO - Field names read: dict_keys(['ID', 'Pedal name', 'Manufacturer', 'Type of effect', 'Own'])
+2019-01-30 10:22:11,381 - loader - INFO - Processed 2 files
