@@ -4,7 +4,7 @@
 
 This Python project contains code for:
 
-* Creating synthetic 'modules' and 'attributes' data
+* Creating synthetic data
 * Loading the database with the data
 
 ## Usage
