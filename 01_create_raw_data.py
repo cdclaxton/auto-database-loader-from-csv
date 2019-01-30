@@ -3,7 +3,7 @@ from data_generator.generate import generate_raw_data
 
 if __name__ == '__main__':
 
-    # Location where the raw-data (simulating the modules and attributes) is to be stored
+    # Location where the raw-data is to be stored
     raw_data_path = "../raw-data/"
 
     # Number of rows of data to generate
